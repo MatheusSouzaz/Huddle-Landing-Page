@@ -7,7 +7,7 @@
 }
 
 .container{
-    background-image: url('../../images/bg-desktop.svg');
+    background-image: url('../../src/images/bg-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
  background-color: #674bb0;   

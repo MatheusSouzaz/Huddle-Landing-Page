@@ -9,7 +9,7 @@
         width: 100vw;
         flex-direction: column;
         gap: 20px;
-         background-image: url("../../images/bg-mobile.svg");;
+         background-image: url("../../src/images/bg-mobile.svg");
         
     }
     
