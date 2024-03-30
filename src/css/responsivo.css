@@ -1,35 +1,48 @@
-@media(max-height: 600px){
+@media(max-width: 700px){
+    body{
+        background-color: #674bb0;
+        
+        background-repeat: no-repeat;
+    }
     .container{
         height: 100vh;
         width: 100vw;
         flex-direction: column;
         gap: 20px;
+         background-image: url("../../images/bg-mobile.svg");;
         
     }
     
     .navegacao{
-        width: 100%;
         height: 8%;
-        margin-top: 40px;
+        margin-top: 30px;
     }
     
     .navegacao .logo-texto{
-        height: 60px;
-        margin-left: 40px;
+        height: 35px;
+        margin-left: 30px;
     }
     
     .conteudo{
         display: flex;
-        margin-top: 40px;
+        margin-top: 30px;
         padding: 0px 40px;
+        flex-direction: column;
+        align-items: center;
     }
     .conteudo .mockups{
-        height: 450px;
+        height: 260px;
+        width: 360px;
     }
     .informacoes{
-        margin-left: 40px;
+        margin-left: 0px;
+        margin-top: 20px;
         color: #ffff;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 70px;
     }
     .informacoes .titulo{
         font-size: 28px;
@@ -38,16 +51,11 @@
     }
     .informacoes .texto{
         font-size: 16px;
-        font-weight: 300;
-        margin-top: 20px;
         margin-bottom: 50px;
     }
     .informacoes .btn-registrar{
-        font-size: 16px;
-        color: rgba(137, 43, 226, 0.733);
-        background-color: #ffff;
-        border-radius: 20px;
-        padding: 12px 50px;
-        transition: 0.5s;
+        
+        padding: 12px 90px;
+        
     }
 }
