@@ -4,13 +4,14 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    gap: 30px;
     
 }
 
 .navegacao{
     width: 100%;
     height: 10%;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .navegacao .logo-texto{
@@ -24,7 +25,7 @@
     padding: 0px 40px;
 }
 .conteudo .mockups{
-    height: 400px;
+    height: 550px;
 }
 .informacoes{
     margin-left: 40px;
@@ -34,10 +35,10 @@
 .informacoes .titulo{
     font-size: 28px;
     font-weight: 500;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .informacoes .texto{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     margin-top: 20px;
     margin-bottom: 50px;
