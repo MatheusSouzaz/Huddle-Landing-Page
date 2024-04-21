@@ -1,17 +1,14 @@
-.container{
+body{
     height: 100vh;
-    width: 100vw;
-    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 30px;
     
 }
 
 .navegacao{
     width: 100%;
-    height: 10%;
-    margin-top: 50px;
+    height: 10vh;
+    margin-top: 40px;
 }
 
 .navegacao .logo-texto{
@@ -21,21 +18,24 @@
 
 .conteudo{
     display: flex;
-    margin-top: 40px;
-    padding: 0px 40px;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0 50px;
+    gap: 30px;
+
 }
 .conteudo .mockups{
-    height: 550px;
+    max-width: 65%;
 }
+
 .informacoes{
-    margin-left: 40px;
     color: #ffff;
     display: block;
 }
 .informacoes .titulo{
     font-size: 28px;
     font-weight: 500;
-    margin-top: 30px;
 }
 .informacoes .texto{
     font-size: 16px;
@@ -53,6 +53,101 @@
 }
 .informacoes .btn-registrar:hover{
    color: #ffff;
-    background-color: rgba(137, 43, 226, 0.733);
+    background-color: rgb(137, 43, 226);
+    -webkit-box-shadow: -1px 14px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 14px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: -1px 14px 30px 0px rgba(0,0,0,0.75);
 
+}
+
+
+.posicao-formulario{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.548);
+    transition: 0.5s;
+    display: none;
+}
+.posicao-formulario.ativo{
+    display: flex;
+}
+.btn-fechar{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    margin-top: -500px;
+    font-size: 18px;
+    border-radius: 45%;
+    transition: 0.5s;
+}
+
+.btn-fechar:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+
+
+.formulario{
+    width: 340px;
+    height: 420px;
+    padding: 35px;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.formulario .campo{
+    width: 100%;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+.formulario .campo.preenchido{
+    border: solid 1px green;
+}
+.formulario .campo.vazio{
+    border: solid 1px red;
+} 
+
+.campo#campo-mensagem{
+    height: 20%;
+    resize: none;
+    font-family: inherit;
+}
+.formulario .campo-vazio{
+    font-size: 10px;
+    font-weight: 400;
+    color: red;
+    opacity: 0;
+}
+.formulario .campo-vazio.mostrar{
+    opacity: 1;
+}
+
+.formulario #texto-diferente{
+    font-size: 15px;
+    margin-top: 20px;
+    color: black;
+   
+}
+
+.formulario .btn-enviar{
+    color: #ffff;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(122, 60, 204);
+    width: 100%;
+    height: 42px;
+    margin-top: 40px;
+}
+.formulario .btn-enviar:hover{
+    transform: scale(1.1);
+    transition-duration: 0.4s;
 }

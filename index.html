@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="./src/images/MS.png" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/css/reset.css">
@@ -17,7 +18,7 @@
 </head>
 <body>
 
-<div class="container">
+
 <div class="navegacao">
 <img class="logo-texto" src="./src/images/logo.svg" alt="Logo">
 </div>
@@ -30,12 +31,24 @@
   </div>
 
 </div>
-</div>
+<div class="posicao-formulario">
+<div class="formulario">
+  <input class="campo" placeholder="   Nome completo *" type="text">
+  <p class="campo-vazio">campo obrigatório</p>
+  <input class="campo" placeholder="   Email *" type="text">
+  <p class="campo-vazio">campo obrigatório</p>
+  <input class="campo" placeholder="   Telefone *" type="text">
+  <p class="campo-vazio">campo obrigatório</p>
+  <textarea class="campo" id="campo-mensagem" placeholder="   Mensagem *"  name="" id="" cols="30" rows="10"></textarea>
+  <p class="campo-vazio">campo obrigatório</p>
+  <p id="texto-diferente">*campos obrigatórios</p>
+  <button type="button" class="btn-enviar">Enviar</button>
+          </div>
+          <p class="btn-fechar">X</p>
+        </div>
 
 
 
-
-
- 
+<script src="./src/js/index.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
 
 }
 
-.container{
+body{
     background-image: url('../../src/images/bg-desktop.svg');
     background-size: cover;
     background-repeat: no-repeat;
